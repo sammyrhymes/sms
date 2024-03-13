@@ -3,13 +3,17 @@ import os
 
 RAPIDAPI_KEY = os.getenv("RAPIDAPI_KEY")
 RAPIDAPI_HOST = os.getenv("RAPIDAPI_HOST")
-
+NUMBER = +245678909939
+MESSAGE = 'WORKING NOW!'
 
 url = "https://textflow-sms-api.p.rapidapi.com/send-sms"
 
+
+
+
 payload = {
-	"phone_number": "+254790599723",
-	"text": "Test message from TextFlow"
+	"phone_number": f"{NUMBER}",
+	"text": f"{MESSAGE}"
 }
 headers = {
 	"content-type": "application/json",
